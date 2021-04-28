@@ -1,19 +1,19 @@
-# 📒 Markdown template example (pdf)
-
-When using **markdown template**, it is possible to export output as PDF.
-
-See [rendering of this file here](https://github.com/lowlighter/lowlighter/blob/master/metrics.markdown.pdf) and [original template source here](https://github.com/lowlighter/metrics/blob/master/source/templates/markdown/example.pdf.md).
-
-## 🧩 Plugins
-
-You can customize your template with both markdown plugins and SVG plugins like below:
+# GitHub Resume
+### Powered by [lowlighter/metrics](https://github.com/lowlighter/metrics)
 
 <%- await include(`partials/rss.ejs`) %>
 
+# Basic info
 <%- await embed(
-  `resume`, 
+  `base`, 
   {
-    base: 'activity, community, repositories, metadata',
+    base: ['activity', 'community', 'repositories', 'metadata']
+  }
+) %>
+
+<%- await embed(
+  `calendar`, 
+  {
     isocalendar: true
   }
 ) %>
