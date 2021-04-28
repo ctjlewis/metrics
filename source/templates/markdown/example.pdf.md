@@ -1,9 +1,9 @@
 # GitHub Resume
-### Powered by [lowlighter/metrics](https://github.com/lowlighter/metrics)
+#### Powered by [lowlighter/metrics](https://github.com/lowlighter/metrics)
 
 <%- await include(`partials/rss.ejs`) %>
 
-# Basic info
+## Basic info
 <%- await embed(
   `base`, 
   {
@@ -14,6 +14,7 @@
 <%- await embed(
   `calendar`, 
   {
+    base: ['activity', 'community', 'repositories', 'metadata'],
     isocalendar: true
   }
 ) %>
