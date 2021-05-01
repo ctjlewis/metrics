@@ -1,6 +1,3 @@
-### Open Source Resume
-*Generated with [GitHub Metrics](https://github.com/lowlighter/metrics)*
-
 <%- await include(`partials/rss.ejs`) %> 
 
 <%- await embed(
@@ -10,8 +7,10 @@
   }
 ) %>
 
+## Open Source Resume
+*Generated with [GitHub Metrics](https://github.com/lowlighter/metrics)*
 
-### Summary: GitHub
+#### Summary: GitHub
 <%- await embed(
   `resume-basic-info`, 
   {
@@ -33,9 +32,9 @@
 ) %>
 
 <div style="break-after: always; page-break-after: always;"></div>
-<div style="padding-top: 4vh;"></div>
+<div style="padding-top: 3vh;"></div>
 
-### Contributions: GitHub
+#### Contributions: GitHub
 <%- await embed(
   `resume-activity`, 
   {
@@ -52,9 +51,9 @@
 ) %>
 
 <div style="break-after: always; page-break-after: always;"></div>
-<div style="padding-top: 4vh;"></div>
+<div style="padding-top: 3vh;"></div>
 
-### Contributions: StackOverflow
+#### Contributions: StackOverflow
 <%- await embed(
   `resume-stackoverflow`,
   {
@@ -63,7 +62,7 @@
     stackoverflow: true,
     stackoverflow_sections: ['answers-recent'],
     stackoverflow_user: 1674992,
-    stackoverflow_limit: 4,
+    stackoverflow_limit: 5,
     stackoverflow_lines: 4,
   }
 ) %>
