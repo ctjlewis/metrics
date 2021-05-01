@@ -33,6 +33,7 @@
 ) %>
 
 <div style="page-break-after: always;"></div>
+<div style="padding-top: 13%;"></div>
 
 ### Contributions: GitHub
 <%- await embed(
@@ -41,8 +42,8 @@
     base: [],
 
     activity: true,
-    activity_days: 0,
-    activity_limit: 365,
+    activity_days: 365,
+    activity_limit: 15,
     activity_filter: [
       'issue',
       'pr'
@@ -51,6 +52,7 @@
 ) %>
 
 <div style="page-break-after: always;"></div>
+<div style="padding-top: 13%;"></div>
 
 ### Contributions: StackOverflow
 <%- await embed(
