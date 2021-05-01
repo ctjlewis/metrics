@@ -7,17 +7,18 @@
 <%- await embed(
   `resume-template`, 
   {
+    isocalendar: true,
+    isocalendar_duration: 'full-year',
     base: ['header', 'activity', 'community', 'repositories', 'metadata'],
     repositories_forks: true,
-    plugin_followup: false,
-    plugin_notable: true,
-    plugin_lines: true,
-    plugin_isocalendar: true,
-    plugin_languages: true,
-    plugin_stackoverflow: 1674992,
-    plugin_stackoverflow_limit: 3,
-    plugin_stackoverflow_lines: 4
-    plugin_isocalendar_duration: 'full-year',
-    plugin_stackoverflow_sections: ['answers-top', 'answers-recent'],
+    followup: false,
+    notable: true,
+    lines: true,
+    languages: true,
+    stackoverflow_sections: ['answers-top', 'answers-recent'],
+    stackoverflow: true,
+    stackoverflow_user: 1674992,
+    stackoverflow_limit: 3,
+    stackoverflow_lines: 4,
   }
 ) %>
