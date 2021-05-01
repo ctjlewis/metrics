@@ -21,20 +21,20 @@
     notable: true,
     lines: true,
 
-    // followup: true,
-    // followup_sections: ['user'],
+    followup: true,
+    followup_sections: ['user'],
 
     languages: true,
     languages_details: ['bytes-size', 'percentage'],
     
-    isocalendar: true,
-    isocalendar_duration: 'full-year',
+    // isocalendar: true,
+    // isocalendar_duration: 'full-year',
   }
 ) %>
 
 <div style="page-break-after: always;"></div>
 
-### Activity
+### Contributions: GitHub
 <%- await embed(
   `resume-activity`, 
   {
@@ -52,7 +52,7 @@
 
 <div style="page-break-after: always;"></div>
 
-### StackOverflow
+### Contributions: StackOverflow
 <%- await embed(
   `resume-stackoverflow`,
   {
