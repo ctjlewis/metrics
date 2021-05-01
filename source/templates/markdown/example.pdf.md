@@ -1,4 +1,4 @@
-# GitHub Resume
+# Open Source Resume
 **Powered by [lowlighter/metrics](https://github.com/lowlighter/metrics)**
 
 <%- await include(`partials/rss.ejs`) %>
@@ -8,8 +8,6 @@
   `resume-template`, 
   {
     base: ['header', 'activity', 'community', 'repositories', 'metadata'],
-    user: 'ctjlewis',
-    template: 'classic',
     repositories_forks: true,
     plugin_followup: false,
     plugin_notable: true,
