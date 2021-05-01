@@ -38,7 +38,7 @@
 <%- await embed(
   `resume-activity`, 
   {
-    base: false,
+    base: [],
 
     activity: true,
     activity_days: 0,
@@ -56,12 +56,12 @@
 <%- await embed(
   `resume-stackoverflow`,
   {
-    base: false,
+    base: [],
 
     stackoverflow: true,
     stackoverflow_sections: ['answers-top', 'answers-recent'],
     stackoverflow_user: 1674992,
-    stackoverflow_limit: 3,
-    stackoverflow_lines: 3,
+    stackoverflow_limit: 2,
+    stackoverflow_lines: 4,
   }
 ) %>
