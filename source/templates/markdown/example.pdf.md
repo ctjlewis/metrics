@@ -7,7 +7,7 @@
   }
 ) %>
 
-## Open Source Resume
+### Open Source Resume
 *Generated with [GitHub Metrics](https://github.com/lowlighter/metrics)*
 
 #### Summary: GitHub
