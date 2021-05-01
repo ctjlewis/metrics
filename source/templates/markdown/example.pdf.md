@@ -42,7 +42,7 @@
 
     activity: true,
     activity_days: 0,
-    activity_limit: 15,
+    activity_limit: 365,
     activity_filter: [
       'issue',
       'pr'
