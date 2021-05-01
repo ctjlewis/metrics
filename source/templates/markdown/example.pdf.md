@@ -11,7 +11,7 @@
 ) %>
 
 
-### Basic info
+### Summary: GitHub
 <%- await embed(
   `resume-basic-info`, 
   {
@@ -32,8 +32,8 @@
   }
 ) %>
 
-<div style="page-break-after: always;"></div>
-<div style="padding-top: 13%;"></div>
+<div style="break-after: always; page-break-after: always;"></div>
+<div style="padding-top: 13vh;"></div>
 
 ### Contributions: GitHub
 <%- await embed(
@@ -51,8 +51,8 @@
   }
 ) %>
 
-<div style="page-break-after: always;"></div>
-<div style="padding-top: 13%;"></div>
+<div style="break-after: always; page-break-after: always;"></div>
+<div style="padding-top: 13vh;"></div>
 
 ### Contributions: StackOverflow
 <%- await embed(
