@@ -23,21 +23,26 @@
     notable: true,
     lines: true,
 
-    followup: true,
-    followup_sections: ['user'],
+    // followup: true,
+    // followup_sections: ['user'],
 
     languages: true,
-    languages_details: ['bytes-size', 'percentage']
+    languages_details: ['bytes-size', 'percentage'],
     
     isocalendar: true,
     isocalendar_duration: 'full-year',
-
-    stackoverflow: true,
-    stackoverflow_sections: ['answers-top', 'answers-recent'],
-    stackoverflow_user: 1674992,
-    stackoverflow_limit: 3,
-    stackoverflow_lines: 4,
   }
 ) %>
 
 <div style="page-break-after: always;"></div>
+
+<%- await embed(
+  `resume-stackoverflow`,
+  {
+    stackoverflow: true,
+    stackoverflow_sections: ['answers-top', 'answers-recent'],
+    stackoverflow_user: 1674992,
+    stackoverflow_limit: 3,
+    stackoverflow_lines: 3,
+  }
+) %>
