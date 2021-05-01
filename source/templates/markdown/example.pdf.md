@@ -62,6 +62,6 @@
     stackoverflow_sections: ['answers-top', 'answers-recent'],
     stackoverflow_user: 1674992,
     stackoverflow_limit: 2,
-    stackoverflow_lines: 4,
+    stackoverflow_lines: 8,
   }
 ) %>
