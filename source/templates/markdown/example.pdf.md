@@ -48,6 +48,7 @@
 <%- await embed(
   `resume-stackoverflow`,
   {
+    base: false,
     stackoverflow: true,
     stackoverflow_sections: ['answers-top', 'answers-recent'],
     stackoverflow_user: 1674992,
