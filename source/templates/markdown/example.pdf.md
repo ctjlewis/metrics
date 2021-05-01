@@ -17,8 +17,6 @@
   {
     base: ['activity', 'community', 'repositories', 'metadata'],
 
-    activity: true,
-    
     repositories_forks: true,
     notable: true,
     lines: true,
@@ -36,6 +34,17 @@
 
 <div style="page-break-after: always;"></div>
 
+### Activity
+<%- await embed(
+  `resume-activity`, 
+  {
+    activity: true,
+  }
+) %>
+
+<div style="page-break-after: always;"></div>
+
+### StackOverflow
 <%- await embed(
   `resume-stackoverflow`,
   {
