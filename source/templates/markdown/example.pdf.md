@@ -1,4 +1,4 @@
-## Open Source Resume
+### Open Source Resume
 *Generated with [GitHub Metrics](https://github.com/lowlighter/metrics)*
 
 <%- await include(`partials/rss.ejs`) %> 
@@ -33,7 +33,7 @@
 ) %>
 
 <div style="break-after: always; page-break-after: always;"></div>
-<div style="padding-top: 13vh;"></div>
+<div style="padding-top: 4vh;"></div>
 
 ### Contributions: GitHub
 <%- await embed(
@@ -52,7 +52,7 @@
 ) %>
 
 <div style="break-after: always; page-break-after: always;"></div>
-<div style="padding-top: 13vh;"></div>
+<div style="padding-top: 4vh;"></div>
 
 ### Contributions: StackOverflow
 <%- await embed(
