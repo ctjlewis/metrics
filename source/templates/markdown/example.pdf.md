@@ -7,7 +7,9 @@
   }
 ) %>
 
-*This Open Source Resume generated with [GitHub Metrics](https://github.com/lowlighter/metrics)*
+<div style="padding-top: 3vh;"></div>
+
+*This Open Source Resume generated with [GitHub Metrics](https://github.com/lowlighter/metrics).*
 
 #### Summary: GitHub
 <%- await embed(
