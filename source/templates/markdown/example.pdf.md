@@ -21,8 +21,8 @@
     notable: true,
     lines: true,
 
-    followup: true,
-    followup_sections: ['user'],
+    // followup: true,
+    // followup_sections: ['user'],
 
     languages: true,
     languages_details: ['bytes-size', 'percentage'],
