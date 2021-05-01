@@ -7,9 +7,10 @@
   }
 ) %>
 
-<div style="padding-top: 3vh;"></div>
+<div style="padding-top: 2vh;"></div>
 
-*This Open Source Resume generated with [GitHub Metrics](https://github.com/lowlighter/metrics).*
+*This open source resume was generated with [GitHub
+Metrics](https://github.com/lowlighter/metrics).*
 
 #### Summary: GitHub
 <%- await embed(
@@ -43,7 +44,7 @@
 
     activity: true,
     activity_days: 365,
-    activity_limit: 15,
+    activity_limit: 100,
     activity_filter: [
       'issue',
       'pr'

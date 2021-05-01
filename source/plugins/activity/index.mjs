@@ -26,11 +26,12 @@ export default async function({login, data, rest, q, account, imports}, {enabled
     const {data:events} = context.mode === "repository" ? await rest.activity.listRepoEvents({owner:context.owner, repo:context.repo}) : await rest.activity.listEventsForAuthenticatedUser({username:login, per_page:100})
     console.debug(`metrics/compute/${login}/plugins > activity > ${events.length} events loaded`)
 
+    console.log({ days })
     //Extract activity events
     const activity = (await Promise.all(
       events
         .filter(({actor}) => account === "organization" ? true : actor.login === login)
-        .filter(({created_at}) => Number.isFinite(days) ? new Date(created_at) > new Date(Date.now() - days * 24 * 60 * 60 * 1000) : true)
+        .filter(({created_at}) => !Number.isFinite(days) ? true : new Date(created_at) > new Date(Date.now() - days * 24 * 60 * 60 * 1000))
         .filter(event => visibility === "public" ? event.public : true)
         .map(async ({type, payload, actor:{login:actor}, repo:{name:repo}, created_at}) => {
           //See https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/github-event-types
