@@ -44,7 +44,7 @@ Metrics](https://github.com/lowlighter/metrics).*
 
     activity: true,
     activity_days: 365,
-    activity_limit: 100,
+    activity_limit: 50,
     activity_filter: [
       'issue',
       'pr'
