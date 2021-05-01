@@ -1,17 +1,24 @@
-# Open Source Resume
-**Powered by [lowlighter/metrics](https://github.com/lowlighter/metrics)**
+## Open Source Resume
+Powered by [lowlighter/metrics](https://github.com/lowlighter/metrics)
+
+<%- await embed(
+  `resume-header`, 
+  {
+    base: ['header'],
+  }
+) %>
 
 <%- await include(`partials/rss.ejs`) %>
 
 ## Basic info
 <%- await embed(
-  `resume-template`, 
+  `resume-basic-info`, 
   {
     isocalendar: true,
     isocalendar_duration: 'full-year',
-    base: ['header', 'activity', 'community', 'repositories', 'metadata'],
-    stackoverflow_sections: ['answers-top', 'answers-recent'],
+    base: ['activity', 'community', 'repositories', 'metadata'],
     stackoverflow: true,
+    stackoverflow_sections: ['answers-top', 'answers-recent'],
     stackoverflow_user: 1674992,
     stackoverflow_limit: 3,
     stackoverflow_lines: 4,
