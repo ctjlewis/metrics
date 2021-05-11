@@ -61,15 +61,15 @@
             const baseUrl = String.raw`https?:\/\/(?:www\.)?github.com\/([\w.-]+\/[\w.-]+)\/`
             return value
               .replace(
-                RegExp(baseUrl + String.raw`(?:issues|pull|discussions)\/(\d+)(?:\?\S+)?(#\S+)?`, "g"),
+                RegExp(baseUrl + String.raw`(?:issues|pull|discussions)\/(\d+)(?:\?[\w-]+)?(#[\w-]+)?(?=<)`, "g"),
                 (_, repo, id, comment) => (options?.repo === repo ? "" : repo) + `#${id}` + (comment ? ` (comment)` : ""),
               ) // -> 'lowlighter/metrics#123'
               .replace(
-                RegExp(baseUrl + String.raw`commit\/([\da-f]+)`, "g"),
+                RegExp(baseUrl + String.raw`commit\/([\da-f]+)(?=<)`, "g"),
                 (_, repo, sha) => (options?.repo === repo ? "" : repo + "@") + sha,
               ) // -> 'lowlighter/metrics@123abc'
               .replace(
-                RegExp(baseUrl + String.raw`compare\/(\S+...\S+)`, "g"),
+                RegExp(baseUrl + String.raw`compare\/([\w-.]+...[\w-.]+)(?=<)`, "g"),
                 (_, repo, tags) => (options?.repo === repo ? "" : repo + "@") + tags,
               ) // -> 'lowlighter/metrics@1.0...1.1'
         }
@@ -97,6 +97,15 @@
       },
       achievements() {
         return this.metrics?.rendered.plugins.achievements.list?.filter(({ leaderboard }) => !leaderboard).filter(({ title }) => !/(?:automater|octonaut|infographile)/i.test(title)) ?? []
+      },
+      introduction() {
+        return this.metrics?.rendered.plugins.introduction?.text ?? ""
+      },
+      followup() {
+        return this.metrics?.rendered.plugins.followup ?? null
+      },
+      habits() {
+        return this.metrics?.rendered.plugins.habits.commits.hours ?? null
       },
       isocalendar() {
         return (this.metrics?.rendered.plugins.isocalendar.svg ?? "")
