@@ -9,8 +9,7 @@
 
 <div style="padding-top: 2vh;"></div>
 
-*This open source resume was generated with [GitHub
-Metrics](https://github.com/lowlighter/metrics).*
+*Generated with [GitHub Metrics](https://github.com/lowlighter/metrics).*
 
 #### Summary: GitHub
 <%- await embed(
@@ -43,8 +42,8 @@ Metrics](https://github.com/lowlighter/metrics).*
     base: [],
 
     activity: true,
-    activity_days: 180,
-    activity_limit: 50,
+    // activity_days: 180,
+    // activity_limit: 50,
     activity_filter: [
       'issue',
       'pr'
