@@ -42,7 +42,7 @@
     base: [],
 
     activity: true,
-    // activity_days: 180,
+    activity_days: 30,
     // activity_limit: 50,
     activity_filter: [
       'issue',
