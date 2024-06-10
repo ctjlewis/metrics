@@ -34,7 +34,7 @@
     "@faker-js/faker": "^7.3.0",
     "@googlemaps/google-maps-services-js": "^3.3.16",
     "@octokit/graphql": "^5.0.0",
-    "@octokit/rest": "^19.0.3",
+    "@octokit/rest": "^20.1.1",
     "@primer/css": "^20.4.1",
     "@primer/octicons": "^17.4.0",
     "axios": "^0.27.2",
